@@ -15,14 +15,21 @@
 */
 
 //CODE HERE
+let me = {
+  firstName: 'Karina',
+  state: 'AZ',
+  age: 25,
+  greeter: function () {
+    console.log(`Hello! My name is ${this.firstName} and I live in ${this.state}`)
+  }
+}
 
-
-
+me.greeter()
 
 
 //////////////////PROBLEM 2////////////////////
 /*
-  Write a function called carFactory that takes in three parameters: a make, model, and year.  
+  Write a function called carFactory that takes in three parameters: a make, model, and year.
   When the function is invoked:
     - a string will be sent in for make
     - a string will be sent in for model
@@ -37,7 +44,7 @@
     carFactory('toyota', 'camry', 2020)
   should return an object that looks like this:
   {
-    make: 'toyota', 
+    make: 'toyota',
     model: 'camry',
     year: 2020,
     isNew: true
@@ -45,3 +52,18 @@
 */
 
 //CODE HERE
+function carFactory(make, model, year) {
+  let car = {
+    make: make,
+    model: model,
+    year: year
+  }
+  if (year > 2018) {
+    car.isNew = true
+  } else {
+    car.isNew = false
+  }
+  console.log(car)
+}
+
+carFactory('nissan', 'frontier', 2004)

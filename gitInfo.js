@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+let gitDefinition = 'Git is program that allows users to track changes in files.'
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+let gitHubDefinition = 'GitHub is a webiste where you can push code files and see the git history.'
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,7 +34,9 @@
 */
 
 //CODE HERE
-
+let init = {
+    git init: 'git init is used to start a new repository within the folder the command is being executed'
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +44,9 @@
 */
 
 //CODE HERE
-
+let clone = {
+    git clone: 'makes a copy of the repository'
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +54,9 @@
 */
 
 //CODE HERE
-
+let status = {
+    git status: 'tells you about the repo you are currently in'
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +64,9 @@
 */
 
 //CODE HERE
-
+let add = {
+    git add: 'adds files to the repo that need to be tracked'
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +74,9 @@
 */
 
 //CODE HERE
-
+let commit = {
+    git commit: 'created a snapshot of tracked files'
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +85,6 @@
 */
 
 //CODE HERE
+let push = {
+    git push: 'pushes/adds the commits to GitHub'
+}
